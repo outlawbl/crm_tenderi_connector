@@ -9,7 +9,7 @@ import json
 def main_function(pdf_data, file_path):
     
     def post_account(acc_info):
-        print('Adding new account...')
+        print(datetime.now().strftime("%H:%M:%S"), 'Adding new account...')
         data = {
             'name': acc_info['name'],
             'sicCode': acc_info['jib']
@@ -17,12 +17,12 @@ def main_function(pdf_data, file_path):
         response = client.request('POST', 'Account', data)
         posted_account_id = response['id']
         posted_account_name = response['name']
-        print(f'New account have been added: {posted_account_name}')
+        print(datetime.now().strftime("%H:%M:%S"), f'New account have been added: {posted_account_name}')
         return posted_account_id
 
     def check_account(pdf_data):
         # provjeri postoji li Pravno lice u CRM
-        print('Checking if account already exists...')
+        print(datetime.now().strftime("%H:%M:%S"), 'Checking if account already exists...')
         jib = pdf_data['uo']['jib']
         params = {
             "select": "name",
@@ -38,7 +38,7 @@ def main_function(pdf_data, file_path):
 
         # ako ne postoji dodaj novo Pravno lice i vrati ID
         if response['total'] == 0:
-            print('Account does not exist.')
+            print(datetime.now().strftime("%H:%M:%S"), 'Account does not exist.')
             posted_account_id = post_account(pdf_data['uo'])
             return posted_account_id
         # ako postoji vrati ID
@@ -47,21 +47,21 @@ def main_function(pdf_data, file_path):
             return response['list'][0]['id']
     
     def post_tender(pdf_data):
-        print('Adding new tender...', datetime.now())
+        print(datetime.now().strftime("%H:%M:%S"), 'Adding new tender...')
         data = pdf_data['osnovni_podaci']
         data['accounts1Id'] = account_id
         data['tipTendera'] = "Objavljeni"
         data['createdAt'] = json.dumps(datetime.now(), indent=4, default=str)
         response = client.request('POST', 'Tenderi', data)
         tender_id = response['id']
-        print('New tender have been successfully added!')
+        print(datetime.now().strftime("%H:%M:%S"), 'New tender have been successfully added!')
         return tender_id
 
 
     def post_document(file_path, tender_id):
     # post attachment
-        print('Adding new document...')
-        print('    - Adding new attachment...')
+        print(datetime.now().strftime("%H:%M:%S"), 'Adding new document...')
+        print(datetime.now().strftime("%H:%M:%S"), '    - Adding new attachment...')
         with open(file_path, "rb") as pdf_file:
             encoded_file = base64.b64encode(pdf_file.read()).decode()
             regex_query = re.compile('(?<=watch_folder\/).*')
