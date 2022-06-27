@@ -5,12 +5,6 @@ import shutil
 import pathlib
 from watchdog.observers import Observer
 from watchdog.events import PatternMatchingEventHandler
-from readPdf2 import readPdf
-from espo_api_client import EspoAPI
-from main import main_function
-
-
-# client = EspoAPI('http://10.0.0.77', '3a6e01aeee51af096936fe7c6eb4dd06')
 
 if __name__ == "__main__":
     patterns = ["*"]
