@@ -97,10 +97,11 @@ my_event_handler.on_deleted = on_deleted
 my_event_handler.on_modified = on_modified
 my_event_handler.on_moved = on_moved
 
-path = "./watch_folder"
+path = ["./watch_folder", "./watch_folder2"]
 go_recursively = False
 my_observer = Observer()
-my_observer.schedule(my_event_handler, path, recursive=go_recursively)
+for i in path:
+    my_observer.schedule(my_event_handler, i, recursive=go_recursively)
 
 my_observer.start()
 try:
