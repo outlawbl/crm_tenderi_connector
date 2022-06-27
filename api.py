@@ -18,7 +18,27 @@ def get_accounts():
         ],
     }
 
-    pprint.pprint(client.request('GET', 'Tenderi', params))
+    client.request('GET', 'Tenderi', params)
+
+def get_tender(broj_postupka):
+    params = {
+        "select": "",
+        "where": [
+            {
+                "type": "like",
+                "attribute": "brojPostupka",
+                "value": broj_postupka
+            },
+            {
+                "type": "equals",
+                "attribute": "deleted",
+                "value": 0
+            }
+        ],
+    }
+
+    return client.request('GET', 'Tenderi', params)
+
 
 def post_document(file_name):
     # post attachment
