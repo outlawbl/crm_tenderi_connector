@@ -3,7 +3,7 @@ from datetime import date
 import base64
 import pprint
 
-client = EspoAPI('http://10.0.0.77', '3a6e01aeee51af096936fe7c6eb4dd06')
+client = EspoAPI('http://23.88.46.218:85', '3a6e01aeee51af096936fe7c6eb4dd06')
 
 # Get accounts
 def get_accounts():
@@ -18,7 +18,27 @@ def get_accounts():
         ],
     }
 
-    pprint.pprint(client.request('GET', 'Tenderi', params))
+    client.request('GET', 'Tenderi', params)
+
+def get_tender(broj_postupka):
+    params = {
+        "select": "",
+        "where": [
+            {
+                "type": "like",
+                "attribute": "brojPostupka",
+                "value": broj_postupka
+            },
+            {
+                "type": "equals",
+                "attribute": "deleted",
+                "value": 0
+            }
+        ],
+    }
+
+    return client.request('GET', 'Tenderi', params)
+
 
 def post_document(file_name):
     # post attachment
