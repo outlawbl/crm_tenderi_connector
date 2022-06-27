@@ -1,4 +1,6 @@
 import time
+import pathlib
+import shutil
 from watchdog.observers import Observer
 from watchdog.events import PatternMatchingEventHandler
 from readPdf import readPdf
@@ -17,22 +19,37 @@ if __name__ == "__main__":
     my_event_handler = PatternMatchingEventHandler(patterns, ignore_patterns, ignore_directories, case_sensitive)
 
 def on_created(event):
+    time.sleep(3)
     print(f"{event.src_path} je kreiran!")
     file_path = event.src_path
     dir_path = os.path.dirname(os.path.realpath(file_path))
-    # file_extention_re = re.compile('^.*\.(jpg|JPG|gif|GIF|doc|DOC|pdf|PDF)$')
-    # file_extention_re = re.compile('(\\.[^.]+)$')
-    file_name = re.compile('(?<=folder/).*(?=\.)').findall(file_path)[0]
-    file_extention = re.compile('([^.]+)$').findall(file_path)[0]
+    file_name = os.path.basename(file_path)
+    file_extention = pathlib.Path(file_path).suffix
+    print(file_extention)
+    
     try:
         global pdf_data 
-        pdf_data = readPdf(f"{event.src_path}")
+        pdf_data = readPdf(file_path)
         print(pdf_data, file_path)
         main_function(pdf_data, file_path)
-        new_file_name = f'_synced_{file_name}.{file_extention}'
-        os.rename(file_path, os.path.join(dir_path, new_file_name))
-    except:
-        print('Fajl nije ispravan!', file_extention)
+        if not file_name.startswith('_synced_'):
+            new_file_name = f'_synced_{file_name}'
+        else:
+            new_file_name = file_name
+        new_file_path = os.path.join(dir_path, new_file_name)
+        os.rename(file_path, new_file_path)
+
+        new_path = os.path.join(dir_path, 'synced')
+        
+        # ako ne postoji folder "synced", napravi ga.
+        if not os.path.exists(new_path):
+            os.mkdir(new_path)
+
+        # premjesti sinhronizovan fajl u "synced" folder
+        shutil.move(new_file_path, os.path.join(new_path, new_file_name))
+    except Exception as e: 
+        print('Greska:' ,e)
+        pass
 
     # print(client.request('POST', 'Tenderi', pdf_data['osnovni_podaci']))
 
