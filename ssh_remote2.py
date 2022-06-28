@@ -1,6 +1,6 @@
 import os
+import time
 from paramiko import SSHClient, AutoAddPolicy, Transport
-# import paramiko
 from regex import E
 from scp import SCPClient
 from contextlib import closing
@@ -12,24 +12,34 @@ transport = Transport((host, port))
 username = "root"
 password="banjaluka2018"
 
-print("Connecting...")
+while(True):
+    print("Connecting...")
 
-ssh = SSHClient()
-ssh.set_missing_host_key_policy(AutoAddPolicy())
-ssh.connect(host, port, username, password)
+    ssh = SSHClient()
+    ssh.set_missing_host_key_policy(AutoAddPolicy())
+    ssh.connect(host, port, username, password)
 
-scp = SCPClient(ssh.get_transport())
+    scp = SCPClient(ssh.get_transport())
 
-print("Connected.")
+    sftp = ssh.open_sftp()
+
+    print("Connected.")
+
+    remoteFolder = '/home/copy_uploaded_crm_files/uploads_from_remote_server/'
+    localFolder = '/var/www/crm/data/upload/'
 
 
+    try:
+        remoteFiles = sftp.listdir(path=remoteFolder)
+        for file in remoteFiles:
+            scp.get(remoteFolder+file, localFolder+file, recursive=True)
+            sftp.remove(remoteFolder+file)
 
-try:
-    scp.get('/home/sandro/test.txt', '/home/sandro/Dev/crm_tenderi_connector/uploads_from_remote_server')
-except Exception as e:
-    print('Greska:' ,e)
-    pass
+    except Exception as e:
+        print('Greska:' ,e)
+        pass
 
-scp.close()
-ssh.close()
-print("Closed connection.")
+    scp.close()
+    ssh.close()
+    print("Closed connection.")
+    time.sleep(300)
