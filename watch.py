@@ -97,7 +97,7 @@ my_event_handler.on_deleted = on_deleted
 my_event_handler.on_modified = on_modified
 my_event_handler.on_moved = on_moved
 
-path = ["./watch_folder", "./watch_folder2"]
+path = ["./watch_folder"]
 go_recursively = False
 my_observer = Observer()
 for i in path:

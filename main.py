@@ -92,7 +92,8 @@ def main_function(pdf_data, file_path):
                     "publishDate": publish_date,
                     "status": "Active",
                     "tenderisIds": [f"{tender_id}"],
-                    "folderId": "62552a7b40dcbca04"
+                    "folderId": "62552a7b40dcbca04",
+                    "assignedUserId": "1"
                     }
                 client.request('POST', 'Document', data)
                 print('New document have been successfully added!')
