@@ -7,7 +7,7 @@ from watchdog.observers import Observer
 from watchdog.events import PatternMatchingEventHandler
 from readPdf2 import readPdf
 from espo_api_client import EspoAPI
-from main import main_function
+from main import insert_tender
 
 
 # client = EspoAPI('http://10.0.0.77', '3a6e01aeee51af096936fe7c6eb4dd06')
@@ -30,8 +30,15 @@ def on_created(event):
     try:
         global pdf_data 
         pdf_data = readPdf(file_path)
+        print('Tip dokumenta:', pdf_data['tip_dokumenta'])
         print(pdf_data, file_path)
-        main_function(pdf_data, file_path)
+
+        if pdf_data['tip_dokumenta'] ==  'Obavjestenje o nabavci':
+            insert_tender(pdf_data, file_path)
+        elif pdf_data['tip_dokumenta'] ==  'Izvjestaj e-aukcije':
+            print(pdf_data['tip_dokumenta'])
+            pass
+
         if not file_name.startswith('_synced_'):
             new_file_name = f'_synced_{file_name}'
         else:

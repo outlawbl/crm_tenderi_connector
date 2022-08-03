@@ -6,7 +6,7 @@ import pprint
 import re
 import json
 
-def main_function(pdf_data, file_path):
+def insert_tender(pdf_data, file_path):
     tender_broj_postupka = pdf_data['osnovni_podaci']['brojPostupka']
     total_tenders = get_tender(tender_broj_postupka)['total']
     print(total_tenders)
