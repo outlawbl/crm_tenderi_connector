@@ -26,11 +26,10 @@ def readPdf(file_location):
         text += i
 
     niz_redova = text.split('\n')
-    for red in niz_redova:
-        if red == '':
-            niz_redova.remove(red)
-    niz_redova = [i for i in niz_redova if i != ' ']
+
+    niz_redova = [i for i in niz_redova if i.strip()]
     niz_redova = [i for i in niz_redova if not re.match(r'\d\s/\s\d', i)]
+    niz_redova = [transliterate_cir2lat(i) for i in niz_redova]
 
     osnovni_podaci = {
         'assignedUserId': '1',
@@ -43,16 +42,16 @@ def readPdf(file_location):
     for j in niz_redova:
         j = transliterate_cir2lat(j)
         if j.startswith('II 4.a.'):
-            osnovni_podaci['name'] = transliterate_cir2lat(niz_redova[ind+1])
+            osnovni_podaci['name'] = niz_redova[ind+1]
             ind += 1
         elif j.startswith('II 3.c.') or j.startswith('II 6.a.'):
-            osnovni_podaci['procjenjenaVrijednostPostupka'] = transliterate_cir2lat(niz_redova[ind+1])
+            osnovni_podaci['procjenjenaVrijednostPostupka'] = niz_redova[ind+1]
             ind += 1
         elif j.startswith('II 2. '):
-            osnovni_podaci['podjelaNaLotove'] = transliterate_cir2lat(niz_redova[ind+1])
+            osnovni_podaci['podjelaNaLotove'] = niz_redova[ind+1]
             ind += 1
         elif j.startswith('OBAVJEŠTENJE O NABAVCI') or j.startswith('OBAVJEŠTENjE O NABAVCI') or j.startswith('OBAVIJEST O NABAVI'):
-            osnovni_podaci['brojPostupka'] = transliterate_cir2lat(niz_redova[ind+1])
+            osnovni_podaci['brojPostupka'] = niz_redova[ind+1]
             ind += 1
         elif j.startswith('IV 7.'):
             rok_predaje = datetime.strptime(niz_redova[ind+2], '%d.%m.%Y. %H:%M') - timedelta(hours=2)
@@ -70,20 +69,28 @@ def readPdf(file_location):
             osnovni_podaci['datumVrijemeOtvaranja'] = otvaranje
             ind += 1
         elif j.startswith('IV 5.'):
-            osnovni_podaci['isEaukcija'] = transliterate_cir2lat(niz_redova[ind+1])
+            osnovni_podaci['isEaukcija'] = niz_redova[ind+1]
             ind += 1
         elif j.startswith('IDB/JIB'):
             if regex.search(r'\d{13}', niz_redova[ind+2]) != None:
-                uo['jib'] = transliterate_cir2lat(niz_redova[ind+2])
+                uo['jib'] = niz_redova[ind+2]
                 ind += 1
             elif regex.search(r'\d{13}', niz_redova[ind+3]) != None:
-                uo['jib'] = transliterate_cir2lat(niz_redova[ind+3])
+                uo['jib'] = niz_redova[ind+3]
                 ind += 1
             elif regex.search(r'\d{13}', niz_redova[ind+4]) != None:
-                uo['jib'] = transliterate_cir2lat(niz_redova[ind+4])
+                uo['jib'] = niz_redova[ind+4]
+                ind += 1
+            elif regex.search(r'\d{13}', niz_redova[ind+5]) != None:
+                uo['jib'] = niz_redova[ind+5]
+                ind += 1
+            elif regex.search(r'\d{13}', niz_redova[ind+6]) != None:
+                uo['jib'] = niz_redova[ind+6]
+                ind += 1
+            else:
                 ind += 1
         elif j.startswith('I 1. Podaci o ugovornom'):
-            uo_name = transliterate_cir2lat(niz_redova[ind+3])
+            uo_name = niz_redova[ind+3]
             if not niz_redova[ind+4].isdigit():
                 uo_name += ' ' + niz_redova[ind+4]
             uo['name'] = uo_name
