@@ -1,4 +1,5 @@
 import imp
+import logging
 from api import client, get_tender
 from datetime import date, datetime
 import base64
@@ -6,14 +7,17 @@ import pprint
 import re
 import json
 
+logging.basicConfig(filename='example.log', format='%(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S', level=logging.INFO)
+
 def main_function(pdf_data, file_path):
+    
     tender_broj_postupka = pdf_data['osnovni_podaci']['brojPostupka']
     total_tenders = get_tender(tender_broj_postupka)['total']
     print(total_tenders)
     if total_tenders == 0:
         if pdf_data['tip_dokumenta'] == '3':
             def post_account(acc_info):
-                print(datetime.now().strftime("%H:%M:%S"), 'Adding new account...')
+                logging.info('Adding new account...')
                 data = {
                     'name': acc_info['name'],
                     'sicCode': acc_info['jib']
@@ -21,12 +25,12 @@ def main_function(pdf_data, file_path):
                 response = client.request('POST', 'Account', data)
                 posted_account_id = response['id']
                 posted_account_name = response['name']
-                print(datetime.now().strftime("%H:%M:%S"), f'New account have been added: {posted_account_name}')
+                logging.info(f'New account has been added: {posted_account_name}')
                 return posted_account_id
 
             def check_account(pdf_data):
                 # provjeri postoji li Pravno lice u CRM
-                print(datetime.now().strftime("%H:%M:%S"), 'Checking if account already exists...')
+                logging.info('Checking if account already exists...')
                 jib = pdf_data['uo']['jib']
                 params = {
                     "select": "name",
@@ -44,7 +48,7 @@ def main_function(pdf_data, file_path):
 
                 # ako ne postoji dodaj novo Pravno lice i vrati ID
                 if response['total'] == 0:
-                    print(datetime.now().strftime("%H:%M:%S"), 'Account does not exist.')
+                    logging.info('Account does not exist.')
                     posted_account_id = post_account(pdf_data['uo'])
                     return posted_account_id
                 # ako postoji vrati ID
@@ -53,21 +57,21 @@ def main_function(pdf_data, file_path):
                     return response['list'][0]['id']
             
             def post_tender(pdf_data):
-                print(datetime.now().strftime("%H:%M:%S"), 'Adding new tender...')
+                logging.info('Adding new tender...')
                 data = pdf_data['osnovni_podaci']
                 data['accounts1Id'] = account_id
                 data['tipTendera'] = "Objavljeni"
                 data['createdAt'] = json.dumps(datetime.now(), indent=4, default=str)
                 response = client.request('POST', 'Tenderi', data)
                 tender_id = response['id']
-                print(datetime.now().strftime("%H:%M:%S"), 'New tender have been successfully added!')
+                logging.info('New tender has been successfully added!')
                 return tender_id
 
 
             def post_document(file_path, tender_id):
             # post attachment
-                print(datetime.now().strftime("%H:%M:%S"), 'Adding new document...')
-                print(datetime.now().strftime("%H:%M:%S"), '    - Adding new attachment...')
+                logging.info('Adding new document...')
+                logging.info('    - Adding new attachment...')
                 with open(file_path, "rb") as pdf_file:
                     encoded_file = base64.b64encode(pdf_file.read()).decode()
                     regex_query = re.compile('(?<=watch_folder\/).*')
@@ -85,7 +89,7 @@ def main_function(pdf_data, file_path):
                 today = date.today()
                 publish_date = today.strftime("%Y-%m-%d")
 
-                print('    - Adding new document...')
+                logging.info('    - Adding new document...')
                 data = {
                     "name": "Obavjestenje o nabavci",
                     "fileId": doc_id,
@@ -96,13 +100,13 @@ def main_function(pdf_data, file_path):
                     "assignedUserId": "1"
                     }
                 client.request('POST', 'Document', data)
-                print('New document have been successfully added!')
+                logging.info('New document has been successfully added!')
 
             # if pdf_data
             account_id = check_account(pdf_data)
             tender_id = post_tender(pdf_data)
             post_document(file_path, tender_id)
         else:
-            print('Dokument nije obavjestenje o nabavci!')
+            logging.info('Dokument nije obavjestenje o nabavci!')
     else:
-        print('Tender vec postoji!!!')
+        logging.info('Tender vec postoji!!!')

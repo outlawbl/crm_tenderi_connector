@@ -40,7 +40,6 @@ def readPdf(file_location):
     ind = 0
 
     for j in niz_redova:
-        j = transliterate_cir2lat(j)
         if j.startswith('II 4.a.'):
             osnovni_podaci['name'] = niz_redova[ind+1]
             ind += 1
@@ -95,6 +94,7 @@ def readPdf(file_location):
                 uo_name += ' ' + niz_redova[ind+4]
             uo['name'] = uo_name
             ind += 1
+        # TODO: Ovo treba odvojiti da uhvati samo prvi broj obavjestenja, jer kasnije nadje jos neki
         elif regex.search(r'(?<=^((\d*-){4}))\d+', j) != None:
             podaci['tip_dokumenta'] = (regex.search(r'(?<=^((\d*-){4}))\d+', j)[0])
             ind += 1
