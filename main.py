@@ -109,4 +109,7 @@ def main_function(pdf_data, file_path):
         else:
             logging.info('Dokument nije obavjestenje o nabavci!')
     else:
-        logging.info('Tender vec postoji!!!')
+        if tender_broj_postupka:
+            logging.info(f'Tender vec postoji! Broj postupka: {tender_broj_postupka}')
+        else:
+            logging.info('Tender vec postoji!!!')

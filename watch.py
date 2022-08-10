@@ -24,7 +24,7 @@ if __name__ == "__main__":
 
 def on_created(event):
     time.sleep(3)
-    print(f"{event.src_path} je kreiran!")
+    logging.info(f"{event.src_path} je kreiran!")
     file_path = event.src_path
     dir_path = os.path.dirname(os.path.realpath(file_path))
     file_name = os.path.basename(file_path)
