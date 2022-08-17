@@ -4,16 +4,17 @@ import time
 import shutil
 import pathlib
 import logging
+import configparser
 from watchdog.observers import Observer
 from watchdog.events import PatternMatchingEventHandler
 from readPdf2 import readPdf
 from espo_api_client import EspoAPI
 from main import main_function
 
+config = configparser.ConfigParser(converters={'list': lambda x: [i.strip() for i in x.split(',')]})
+config.read('config.ini')
 
-# client = EspoAPI('http://10.0.0.77', '3a6e01aeee51af096936fe7c6eb4dd06')
-
-logging.basicConfig(filename='example.log', level=logging.ERROR)
+logging.basicConfig(filename=config['PATHS']['logPath'], level=logging.ERROR)
 
 if __name__ == "__main__":
     patterns = ["*"]
@@ -55,7 +56,7 @@ def on_created(event):
             logging.info('Nije nadjen broj postupka.')
             pass
         
-    except Exception as e: 
+    except Exception as e:
         print('Greska:' ,e)
         logging.error(e)
         pass
@@ -106,7 +107,9 @@ my_event_handler.on_deleted = on_deleted
 my_event_handler.on_modified = on_modified
 my_event_handler.on_moved = on_moved
 
-path = ["./watch_folder"]
+watch_folder_path = config['PATHS']['watchFolderPath']
+
+path = [watch_folder_path]
 go_recursively = False
 my_observer = Observer()
 for i in path:

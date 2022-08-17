@@ -1,26 +1,14 @@
-ERROR:root:'brojPostupka'
-ERROR:root:'brojPostupka'
-ERROR:root:local variable 'tender_broj_postupka' referenced before assignment
-ERROR:root:'tip_dokumenta'
-ERROR:root:'tip_dokumenta'
-INFO:root:Nije nadjen broj postupka
-ERROR:root:'tip_dokumenta'
-INFO:root:Nije nadjen broj postupka
-INFO:root:    - Adding new document...
-INFO:root:New document has been successfully added!
-10-Aug-22 11:23:31 - Nije nadjen broj postupka
-10-Aug-22 11:23:36 - Checking if account already exists...
-10-Aug-22 11:33:27 - 'brojPostupka'
-10-Aug-22 11:38:14 - Nije nadjen broj postupka.
-10-Aug-22 11:39:32 - Nije nadjen broj postupka.
-10-Aug-22 11:40:41 - Checking if account already exists...
-10-Aug-22 11:40:42 - Adding new tender...
-10-Aug-22 11:40:46 - New tender has been successfully added!
-10-Aug-22 11:40:47 - Adding new document...
-10-Aug-22 11:40:47 -     - Ad dingnew attachment...
-10-Aug-22 11:40:47 -     - Adding new document...
-10-Aug-22 11:40:48 - New document has been successfully added!
-10-Aug-22 12:25:09 - Tender vec postoji!!!
-10-Aug-22 12:26:14 - ./watch_folder/_synced_7aad81c1-2eee-47a0-be7b-2a087d578d5d.pdf je kreiran!
-10-Aug-22 12:29:49 - ./watch_folder/_synced_7aad81c1-2eee-47a0-be7b-2a087d578d5d.pdf je kreiran!
-10-Aug-22 12:29:53 - Tender vec postoji! Broj postupka: 1002-7-2-136-3-311/22
+10-Aug-22 12:43:36 - ./watch_folder/7aad81c1-2eee-47a0-be7b-2a087d578d5d.pdf je kreiran!
+10-Aug-22 12:43:41 - Tender vec postoji! Broj postupka: 1002-7-2-136-3-311/22
+10-Aug-22 13:30:46 - ./watch_folder/975332f4-65a5-4eb0-b228-52c218f70003.pdf je kreiran!
+10-Aug-22 13:30:59 - Tender vec postoji! Broj postupka: 1276-1-1-740-3-515/22
+17-Aug-22 08:33:23 - ./watch_folder/ee4e97ee-ed76-4146-a889-520ac3575d31 (copy).pdf je kreiran!
+17-Aug-22 08:33:24 - Nije nadjen broj postupka.
+17-Aug-22 08:34:48 - ./watch_folder/ee4e97ee-ed76-4146-a889-520ac3575d31 (copy).pdf je kreiran!
+17-Aug-22 08:34:49 - Nije nadjen broj postupka.
+17-Aug-22 08:35:50 - ./watch_folder/.goutputstream-U88OQ1 je kreiran!
+17-Aug-22 08:35:50 - [Errno 2] No such file or directory: './watch_folder/.goutputstream-U88OQ1'
+17-Aug-22 08:36:04 - ./watch_folder/ee4e97ee-ed76-4146-a889-520ac3575d31 (copy).pdf je kreiran!
+17-Aug-22 08:36:49 - Nije nadjen broj postupka.
+17-Aug-22 08:37:26 - ./watch_folder/ee4e97ee-ed76-4146-a889-520ac3575d31 (copy).pdf je kreiran!
+17-Aug-22 08:37:26 - Nije nadjen broj postupka.
