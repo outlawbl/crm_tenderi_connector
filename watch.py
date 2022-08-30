@@ -32,29 +32,28 @@ def on_created(event):
     file_extention = pathlib.Path(file_path).suffix
     print(file_extention)
     try:
-        global pdf_data 
+        # global pdf_data 
         pdf_data = readPdf(file_path)
-        print(pdf_data, file_path)
-        if 'brojPostupka' in pdf_data['osnovni_podaci']:
-            main_function(pdf_data, file_path)
-            if not file_name.startswith('_synced_'):
-                new_file_name = f'_synced_{file_name}'
-            else:
-                new_file_name = file_name
-            new_file_path = os.path.join(dir_path, new_file_name)
-            os.rename(file_path, new_file_path)
-
-            new_path = os.path.join(dir_path, 'synced')
-            
-            # ako ne postoji folder "synced", napravi ga.
-            if not os.path.exists(new_path):
-                os.mkdir(new_path)
-
-            # premjesti sinhronizovan fajl u "synced" folder
-            shutil.move(new_file_path, os.path.join(new_path, new_file_name))
+        # print(pdf_data, file_path)
+        main_function(pdf_data, file_path)
+        if not file_name.startswith('_synced_'):
+            new_file_name = f'_synced_{file_name}'
         else:
-            logging.info('Nije nadjen broj postupka.')
-            pass
+            new_file_name = file_name
+        new_file_path = os.path.join(dir_path, new_file_name)
+        os.rename(file_path, new_file_path)
+
+        new_path = os.path.join(dir_path, 'synced')
+        
+        # ako ne postoji folder "synced", napravi ga.
+        if not os.path.exists(new_path):
+            os.mkdir(new_path)
+
+        # premjesti sinhronizovan fajl u "synced" folder
+        shutil.move(new_file_path, os.path.join(new_path, new_file_name))
+        # else:
+        #     logging.info('Nije nadjen broj postupka.')
+        #     pass
         
     except Exception as e:
         print('Greska:' ,e)

@@ -12,3 +12,104 @@
 17-Aug-22 08:36:49 - Nije nadjen broj postupka.
 17-Aug-22 08:37:26 - ./watch_folder/ee4e97ee-ed76-4146-a889-520ac3575d31 (copy).pdf je kreiran!
 17-Aug-22 08:37:26 - Nije nadjen broj postupka.
+19-Aug-22 14:39:21 - ./watch_folder/dodjela_ugovora.pdf je kreiran!
+19-Aug-22 14:39:23 - 'tip_dokumenta'
+19-Aug-22 14:39:49 - ./watch_folder/dodjela_ugovora.pdf je kreiran!
+19-Aug-22 14:41:22 - ./watch_folder/dodjela_ugovora.pdf je kreiran!
+20-Aug-22 08:05:40 - ./watch_folder/dodjela_ugovora.pdf je kreiran!
+20-Aug-22 08:05:43 - 'tip_dokumenta'
+20-Aug-22 08:06:33 - ./watch_folder/dodjela_ugovora.pdf je kreiran!
+20-Aug-22 08:06:35 - 'tip_dokumenta'
+20-Aug-22 08:08:29 - ./watch_folder/dodjela_ugovora.pdf je kreiran!
+20-Aug-22 08:17:22 - ./watch_folder/dodjela_ugovora.pdf je kreiran!
+20-Aug-22 08:18:23 - Nije nadjen broj postupka.
+20-Aug-22 08:42:28 - ./watch_folder/dodjela_ugovora.pdf je kreiran!
+20-Aug-22 08:43:09 - Nije nadjen broj postupka.
+20-Aug-22 08:43:59 - ./watch_folder/dodjela_ugovora.pdf je kreiran!
+20-Aug-22 08:44:14 - 'brojPostupka'
+20-Aug-22 08:46:23 - ./watch_folder/dodjela_ugovora.pdf je kreiran!
+20-Aug-22 08:47:17 - 'brojPostupka'
+20-Aug-22 08:53:01 - ./watch_folder/dodjela_ugovora.pdf je kreiran!
+20-Aug-22 08:53:19 - local variable 'tender_broj_postupka' referenced before assignment
+20-Aug-22 09:02:20 - ./watch_folder/ee4e97ee-ed76-4146-a889-520ac3575d31.pdf je kreiran!
+20-Aug-22 09:03:44 - ./watch_folder/45f5554f-3945-4944-9332-b859e7765043.pdf je kreiran!
+20-Aug-22 09:09:38 - ./watch_folder/ee4e97ee-ed76-4146-a889-520ac3575d31.pdf je kreiran!
+20-Aug-22 09:10:24 - ./watch_folder/ee4e97ee-ed76-4146-a889-520ac3575d31.pdf je kreiran!
+20-Aug-22 09:11:07 - ./watch_folder/ee4e97ee-ed76-4146-a889-520ac3575d31.pdf je kreiran!
+20-Aug-22 09:11:40 - ./watch_folder/45f5554f-3945-4944-9332-b859e7765043.pdf je kreiran!
+20-Aug-22 09:12:09 - Tender vec postoji!
+20-Aug-22 09:21:55 - ./watch_folder/Unconfirmed 148231.crdownload je kreiran!
+20-Aug-22 09:21:55 - [Errno 2] No such file or directory: './watch_folder/Unconfirmed 148231.crdownload'
+20-Aug-22 09:21:58 - ./watch_folder/Unconfirmed 148231.crdownload je kreiran!
+20-Aug-22 09:21:58 - [Errno 2] No such file or directory: './watch_folder/Unconfirmed 148231.crdownload'
+20-Aug-22 09:22:01 - ./watch_folder/ne_postoji.pdf je kreiran!
+20-Aug-22 09:23:54 - Checking if account already exists...
+20-Aug-22 12:49:59 - ./watch_folder/ne_postoji.pdf je kreiran!
+20-Aug-22 12:50:48 - Checking if account already exists...
+20-Aug-22 12:50:49 - Account does not exist.
+20-Aug-22 12:50:49 - Adding new account...
+20-Aug-22 12:50:50 - New account has been added: DOM ZDRAVLJA MOSTAR
+20-Aug-22 12:50:56 - Adding new tender...
+20-Aug-22 12:50:59 - New tender has been successfully added!
+20-Aug-22 12:51:12 - Adding new document...
+20-Aug-22 12:51:12 -     - Adding new attachment...
+20-Aug-22 12:51:12 -     - Adding new document...
+20-Aug-22 12:51:13 - New document has been successfully added!
+20-Aug-22 12:51:55 - ./watch_folder/ne_postoji.pdf je kreiran!
+20-Aug-22 12:52:15 - Checking if account already exists...
+20-Aug-22 12:54:11 - ./watch_folder/postoji.pdf je kreiran!
+20-Aug-22 12:54:19 - Tender vec postoji!
+20-Aug-22 12:54:46 - ./watch_folder/ne_postoji.pdf je kreiran!
+20-Aug-22 12:56:21 - ./watch_folder/ne_postoji.pdf je kreiran!
+20-Aug-22 12:56:55 - ./watch_folder/ne_postoji.pdf je kreiran!
+20-Aug-22 12:57:01 - Checking if account already exists...
+20-Aug-22 13:16:07 - ./watch_folder/ne_postoji.pdf je kreiran!
+20-Aug-22 13:16:16 - Checking if account already exists...
+20-Aug-22 13:16:24 - Adding new tender...
+20-Aug-22 13:16:27 - New tender has been successfully added!
+20-Aug-22 13:16:29 - Adding new document...
+20-Aug-22 13:16:29 -     - Adding new attachment...
+20-Aug-22 13:16:34 - name 're' is not defined
+20-Aug-22 13:17:45 - ./watch_folder/ne_postoji.pdf je kreiran!
+20-Aug-22 13:17:51 - Checking if account already exists...
+20-Aug-22 13:18:11 - Adding new tender...
+20-Aug-22 13:18:14 - New tender has been successfully added!
+20-Aug-22 13:18:18 - Adding new document...
+20-Aug-22 13:18:21 -     - Adding new attachment...
+20-Aug-22 13:19:21 - name 're' is not defined
+20-Aug-22 13:19:57 - ./watch_folder/ne_postoji.pdf je kreiran!
+20-Aug-22 13:20:01 - Checking if account already exists...
+20-Aug-22 13:20:01 - Adding new tender...
+20-Aug-22 13:20:04 - New tender has been successfully added!
+20-Aug-22 13:20:07 - Adding new document...
+20-Aug-22 13:20:08 -     - Adding new attachment...
+20-Aug-22 13:22:18 - ./watch_folder/ne_postoji.pdf je kreiran!
+20-Aug-22 13:22:25 - Tender vec postoji!
+20-Aug-22 13:22:51 - ./watch_folder/ne_postoji.pdf je kreiran!
+20-Aug-22 13:22:55 - Checking if account already exists...
+20-Aug-22 13:22:59 - Adding new tender...
+20-Aug-22 13:23:02 - New tender has been successfully added!
+20-Aug-22 13:23:04 - Adding new document...
+20-Aug-22 13:23:05 -     - Adding new attachment...
+20-Aug-22 13:23:43 - ./watch_folder/ne_postoji.pdf je kreiran!
+20-Aug-22 13:23:47 - Checking if account already exists...
+20-Aug-22 13:23:47 - Adding new tender...
+20-Aug-22 13:23:50 - New tender has been successfully added!
+20-Aug-22 13:23:54 - Adding new document...
+20-Aug-22 13:24:00 -     - Adding new attachment...
+20-Aug-22 13:24:28 -     - Adding new document...
+20-Aug-22 13:24:34 - New document has been successfully added!
+20-Aug-22 13:26:46 - ./watch_folder/postoji.pdf je kreiran!
+20-Aug-22 13:26:48 - Tender vec postoji!
+20-Aug-22 13:29:00 - ./watch_folder/_synced_postoji.pdf je kreiran!
+20-Aug-22 13:29:28 - ./watch_folder/_synced_postoji.pdf je kreiran!
+22-Aug-22 08:28:46 - ./watch_folder/dodjela_ugovora.pdf je kreiran!
+22-Aug-22 08:31:29 - ./watch_folder/dodjela_ugovora.pdf je kreiran!
+22-Aug-22 08:31:57 - ./watch_folder/dodjela_ugovora.pdf je kreiran!
+22-Aug-22 08:33:18 - ./watch_folder/dodjela_ugovora.pdf je kreiran!
+22-Aug-22 08:35:08 - ./watch_folder/_synced_postoji.pdf je kreiran!
+22-Aug-22 08:35:48 - ./watch_folder/_synced_postoji.pdf je kreiran!
+22-Aug-22 08:36:13 - time data ' ANEKS A' does not match format '%d.%m.%Y. %H:%M'
+22-Aug-22 08:38:02 - ./watch_folder/_synced_postoji.pdf je kreiran!
+22-Aug-22 08:39:02 - ./watch_folder/dodjela_ugovora.pdf je kreiran!
+22-Aug-22 08:44:57 - ./watch_folder/dodjela_ugovora.pdf je kreiran!
