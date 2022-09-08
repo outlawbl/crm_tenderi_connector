@@ -1,10 +1,11 @@
 import logging
-from api import client, get_tender, get_account, post_account, post_tender, post_document
+from api import client, get_tender, get_account, post_account, post_tender, post_document, get_document, get_documents, update_tender_documents
 from datetime import date, datetime
 import base64
 import pprint
 import re
 import json
+import os
 
 logging.basicConfig(filename='example.log', format='%(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S', level=logging.INFO)
 
@@ -17,6 +18,8 @@ def main_function(pdf_data, file_path):
 
             # Ako ne postoji tender sa tim brojem postupka, dodaj ga
             if total_tenders['total'] == 0:
+                file_name = os.path.basename(file_path)
+
 
                 # provjeri postoji li Pravno lice u CRM
                 fetched_account_data = get_account(pdf_data)
@@ -27,14 +30,27 @@ def main_function(pdf_data, file_path):
                     account_id = post_account(pdf_data['uo'])
                     # return account_id
 
-                # ako postoji vrati ID
+                # ako postoji Pravno lice vrati ID
                 else:
                     print('Account:' ,fetched_account_data['list'][0]['name'])
                     account_id = fetched_account_data['list'][0]['id']
 
+                # Dodaj novi tender
                 tender_id = post_tender(pdf_data, account_id)
-                post_document(file_path, tender_id)
+
+                # Dohvati trenutne dokumente na tenderu
+                tender_documents_ids = []
+                tender_documents_ids = get_documents('Tenderi', tender_id)
+
+                # Dohvati novi dokument
+                new_document_id = get_document('fileId', file_name)
+                # Dodaj ga postojecim
+                tender_documents_ids.append(new_document_id)
+                update_tender_documents(tender_documents_ids)
+
+            # Ako postoji tender loguj da postoji
             else:
-                logging.info(f'Tender vec postoji!', total_tenders['list'][0]['brojPostupka'])
+                existed_tender = total_tenders['list'][0]['brojPostupka']
+                logging.info(f'Tender vec postoji! {existed_tender}')
         else:
             print('Dokument nije validan')

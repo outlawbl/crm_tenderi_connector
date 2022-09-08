@@ -5,12 +5,20 @@ import pprint
 from datetime import date, datetime
 import json
 import logging
+from configparser import ConfigParser
 import re
 import os
 
 logging.basicConfig(filename='example.log', format='%(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S', level=logging.INFO)
 
-client = EspoAPI('http://10.0.0.77', '3a6e01aeee51af096936fe7c6eb4dd06')
+data_file = 'config.ini'
+config = ConfigParser()
+config.read(data_file)
+
+espo_api_host = config['espo_api']['espo_api_host']
+espo_api_key = config['espo_api']['espo_api_key']
+
+client = EspoAPI(espo_api_host, espo_api_key)
 
 # Get accounts
 def get_accounts():
@@ -64,6 +72,20 @@ def get_account(pdf_data):
     pprint.pprint(response)
     return response
 
+def get_document(attribute, value):
+    params = {
+        "select": "id",
+        "where": [
+            {
+                "type": "equals",
+                "attribute": attribute,
+                "value": value,
+            },
+        ],
+        }
+    response = client.request('GET', 'Document', params)
+    pprint.pprint(response)
+    return response['list'][0]['id']
 
 def post_document(file_name):
     # post attachment
@@ -80,14 +102,14 @@ def post_document(file_name):
     "field": "file",
     "file": f"data:application/pdf;base64, {encoded_file}"
     }
-    doc_id = (client.request('POST', 'Attachment', data))['id']
+    # doc_id = (client.request('POST', 'Attachment', data))['id']
 
     today = date.today()
     publish_date = today.strftime("%Y-%m-%d")
 
     data = {
         "name": "test",
-        "fileId": doc_id,
+        "fileId": file_name,
         "publishDate": publish_date,
         "status": "Active"
         }
@@ -133,7 +155,7 @@ def post_document(file_path, tender_id):
     "field": "file",
     "file": f"data:application/pdf;base64, {encoded_file}"
     }
-    doc_id = (client.request('POST', 'Attachment', data))['id']
+    # doc_id = (client.request('GET', 'Attachment', data))['id']
 
     today = date.today()
     publish_date = today.strftime("%Y-%m-%d")
@@ -141,7 +163,7 @@ def post_document(file_path, tender_id):
     logging.info('    - Adding new document...')
     data = {
         "name": "Obavjestenje o nabavci",
-        "fileId": doc_id,
+        "fileId": file_name,
         "publishDate": publish_date,
         "status": "Active",
         "tenderisIds": [f"{tender_id}"],
@@ -151,3 +173,10 @@ def post_document(file_path, tender_id):
     client.request('POST', 'Document', data)
     logging.info('New document has been successfully added!')
 # post_document()
+
+def update_tender_documents(tender_id, documents_ids):
+    print(client.request('PUT', f'Tenderi/{tender_id}', {'documentIds': f'{documents_ids}'}))
+
+def get_documents(entity, id):
+    response = client.request('GET', f'{entity}/{id}')
+    return response['documentsIds']
