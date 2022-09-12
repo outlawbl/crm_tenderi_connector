@@ -1,13 +1,19 @@
 import logging
-from api import client, get_tender, get_account, post_account, post_tender, post_document, get_document, get_documents, update_tender_documents
+from api import client, get_documents, get_tender, get_account, post_account, post_tender, post_document, get_document, get_document_fileId, update_tender_documents
 from datetime import date, datetime
+from crm_connector.settings import BASE_DIR
+from configparser import ConfigParser
 import base64
 import pprint
 import re
 import json
 import os
 
-logging.basicConfig(filename='example.log', format='%(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S', level=logging.INFO)
+data_file = '/home/sandro/Dev/crm_tenderi_connector/crm_connector/config.ini'
+config = ConfigParser()
+config.read(data_file)
+
+logging.basicConfig(filename=config['PATHS']['logPath'], format='%(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S', level=logging.INFO)
 
 def main_function(pdf_data, file_path):
     if 'tip_dokumenta' in pdf_data:
@@ -19,7 +25,6 @@ def main_function(pdf_data, file_path):
             # Ako ne postoji tender sa tim brojem postupka, dodaj ga
             if total_tenders['total'] == 0:
                 file_name = os.path.basename(file_path)
-
 
                 # provjeri postoji li Pravno lice u CRM
                 fetched_account_data = get_account(pdf_data)
@@ -46,7 +51,7 @@ def main_function(pdf_data, file_path):
                 new_document_id = get_document('fileId', file_name)
                 # Dodaj ga postojecim
                 tender_documents_ids.append(new_document_id)
-                update_tender_documents(tender_documents_ids)
+                update_tender_documents(tender_id, tender_documents_ids)
 
             # Ako postoji tender loguj da postoji
             else:

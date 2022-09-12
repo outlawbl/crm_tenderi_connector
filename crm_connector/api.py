@@ -9,9 +9,8 @@ from configparser import ConfigParser
 import re
 import os
 
-logging.basicConfig(filename='example.log', format='%(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S', level=logging.INFO)
 
-data_file = 'config.ini'
+data_file = '/home/sandro/Dev/crm_tenderi_connector/crm_connector/config.ini'
 config = ConfigParser()
 config.read(data_file)
 
@@ -19,6 +18,8 @@ espo_api_host = config['espo_api']['espo_api_host']
 espo_api_key = config['espo_api']['espo_api_key']
 
 client = EspoAPI(espo_api_host, espo_api_key)
+
+logging.basicConfig(filename=config['PATHS']['logPath'], format='%(asctime)s - %(message)s', datefmt='%d-%b-%y %H:%M:%S', level=logging.INFO)
 
 # Get accounts
 def get_accounts():
@@ -69,7 +70,7 @@ def get_account(pdf_data):
         ],
     }
     response = client.request('GET', 'Account', params)
-    pprint.pprint(response)
+    # pprint.pprint(response)
     return response
 
 def get_document(attribute, value):
@@ -175,8 +176,15 @@ def post_document(file_path, tender_id):
 # post_document()
 
 def update_tender_documents(tender_id, documents_ids):
-    print(client.request('PUT', f'Tenderi/{tender_id}', {'documentIds': f'{documents_ids}'}))
+    client.request('PUT', f'Tenderi/{tender_id}', {'documentsIds': documents_ids})
+
+def get_document_fileId(entity, id):
+    response = client.request('GET', f'{entity}/{id}')
+    return response['fileId']
 
 def get_documents(entity, id):
     response = client.request('GET', f'{entity}/{id}')
-    return response['documentsIds']
+    if response['documentsIds'] == 0:
+        return response['documentsIds']
+    else:
+        return []
