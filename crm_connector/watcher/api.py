@@ -1,4 +1,4 @@
-from espo_api_client import EspoAPI
+from watcher.espo_api_client import EspoAPI
 from datetime import date
 import base64
 import pprint

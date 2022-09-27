@@ -9,10 +9,12 @@ from watchdog.observers import Observer
 from watchdog.events import PatternMatchingEventHandler
 from readPdf import readPdf
 from espo_api_client import EspoAPI
+from crm_connector.settings import BASE_DIR
 from main import main_function
 
 config = configparser.ConfigParser(converters={'list': lambda x: [i.strip() for i in x.split(',')]})
-config.read('config.ini')
+data_file = os.path.join(BASE_DIR, 'config.ini')
+config.read(data_file)
 
 logging.basicConfig(filename=config['PATHS']['logPath'], level=logging.ERROR)
 

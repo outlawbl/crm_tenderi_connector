@@ -1,7 +1,10 @@
 from configparser import ConfigParser
+from crm_connector.settings import BASE_DIR
+import os
 import pyodbc as pyodbc
 
-data_file = 'config.ini'
+# data_file = './config.ini'
+data_file = os.path.join(BASE_DIR, 'config.ini')
 config = ConfigParser()
 config.read(data_file)
 

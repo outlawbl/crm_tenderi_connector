@@ -1,7 +1,7 @@
 from django.http import HttpResponse
-from main import main_function
-from readPdf import readPdf
-from api import get_document_fileId
+# from main import main_function
+# from readPdf import readPdf
+from watcher.api import get_document_fileId
 import logging
 from configparser import ConfigParser
 import os
@@ -24,9 +24,10 @@ def test(request, document_id):
         upload_path = config['PATHS']['uploadFoderPath']
         fileId = get_document_fileId('Document', document_id)
         file_path = os.path.join(upload_path, fileId)
-        pdf_data = readPdf(file_path)
-        main_function(pdf_data, file_path)
+        # pdf_data = readPdf(file_path)
+        # main_function(pdf_data, file_path)
         return HttpResponse("App runned")
         
     except Exception as e:
+        logging.info(f'Greska: {e}')
         return HttpResponse("Something went wrong")

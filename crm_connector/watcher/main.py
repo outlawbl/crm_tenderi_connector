@@ -1,5 +1,5 @@
 import logging
-from api import client, get_documents, get_tender, get_account, post_account, post_tender, post_document, get_document, get_document_fileId, update_tender_documents
+from .api import client, get_documents, get_tender, get_account, post_account, post_tender, post_document, get_document, get_document_fileId, update_tender_documents
 from datetime import date, datetime
 from crm_connector.settings import BASE_DIR
 from configparser import ConfigParser

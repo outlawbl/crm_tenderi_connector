@@ -1,42 +1,91 @@
-12-Sep-22 12:29:47 - Tender vec postoji! 916-1-1-34-3-15/22
-12-Sep-22 12:30:14 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/main.py changed, reloading.
-12-Sep-22 12:35:58 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/main.py changed, reloading.
-12-Sep-22 12:36:45 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/main.py changed, reloading.
-12-Sep-22 12:36:50 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/main.py changed, reloading.
-12-Sep-22 13:00:08 - Tender vec postoji! 1180-1-1-78-3-118/22
-12-Sep-22 13:02:07 - Tender vec postoji! 313-7-1-52-3-9/22
-12-Sep-22 13:02:24 - Checking if account already exists...
-12-Sep-22 13:02:25 - Adding new tender...
-12-Sep-22 13:02:26 - New tender has been successfully added!
-12-Sep-22 13:03:27 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/crm_connector/views.py changed, reloading.
-12-Sep-22 13:05:37 - Checking if account already exists...
-12-Sep-22 13:05:37 - Adding new tender...
-12-Sep-22 13:05:38 - New tender has been successfully added!
-12-Sep-22 13:07:07 - Checking if account already exists...
-12-Sep-22 13:07:51 - Adding new tender...
-12-Sep-22 13:07:52 - New tender has been successfully added!
-12-Sep-22 13:12:33 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/main.py changed, reloading.
-12-Sep-22 13:13:45 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/api.py changed, reloading.
-12-Sep-22 13:15:13 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/api.py changed, reloading.
-12-Sep-22 13:15:45 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/main.py changed, reloading.
-12-Sep-22 13:16:36 - Checking if account already exists...
-12-Sep-22 13:17:55 - Adding new tender...
-12-Sep-22 13:17:56 - New tender has been successfully added!
-12-Sep-22 13:21:49 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/manage.py changed, reloading.
-12-Sep-22 13:37:52 - Tender vec postoji! 215-7-1-62-3-52/22
-12-Sep-22 13:38:34 - Tender vec postoji! 215-7-1-62-3-52/22
-12-Sep-22 13:38:43 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/crm_connector/views.py changed, reloading.
-12-Sep-22 13:40:06 - Checking if account already exists...
-12-Sep-22 13:40:09 - Adding new tender...
-12-Sep-22 13:40:11 - New tender has been successfully added!
-12-Sep-22 13:41:14 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/main.py changed, reloading.
-12-Sep-22 13:41:36 - Checking if account already exists...
-12-Sep-22 13:41:36 - Adding new tender...
-12-Sep-22 13:41:38 - New tender has been successfully added!
-12-Sep-22 13:54:32 - Checking if account already exists...
-12-Sep-22 13:54:32 - Adding new tender...
-12-Sep-22 13:54:32 - New tender has been successfully added!
-12-Sep-22 13:57:37 - Tender vec postoji! 313-7-1-52-3-9/22
-16-Sep-22 07:22:45 - Checking if account already exists...
-16-Sep-22 07:22:45 - Adding new tender...
-16-Sep-22 07:22:46 - New tender has been successfully added!
+23-Sep-22 07:30:41 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/manage.py changed, reloading.
+23-Sep-22 07:30:44 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/manage.py changed, reloading.
+26-Sep-22 13:51:35 - Not Found: /favicon.ico
+27-Sep-22 09:30:15 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/crm_connector/settings.py changed, reloading.
+27-Sep-22 09:32:05 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/crm_connector/settings.py changed, reloading.
+27-Sep-22 09:32:33 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/crm_connector/settings.py changed, reloading.
+27-Sep-22 09:33:18 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/__init__.py changed, reloading.
+27-Sep-22 09:33:26 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/__init__.py changed, reloading.
+27-Sep-22 09:35:32 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/apps.py changed, reloading.
+27-Sep-22 09:39:19 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/apps.py changed, reloading.
+27-Sep-22 09:40:22 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/apps.py changed, reloading.
+27-Sep-22 09:40:23 - Watching for file changes with StatReloader
+27-Sep-22 09:41:09 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/apps.py changed, reloading.
+27-Sep-22 09:41:20 - Watching for file changes with StatReloader
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+INFO:django.utils.autoreload:/home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/apps.py changed, reloading.
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+INFO:django.utils.autoreload:/home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/apps.py changed, reloading.
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+INFO:django.utils.autoreload:/home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/apps.py changed, reloading.
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+INFO:django.utils.autoreload:/home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/apps.py changed, reloading.
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+INFO:django.utils.autoreload:/home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/apps.py changed, reloading.
+INFO:django.utils.autoreload:Watching for file changes with StatReloader
+INFO:django.utils.autoreload:/home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/apps.py changed, reloading.
+27-Sep-22 10:00:59 - Watching for file changes with StatReloader
+27-Sep-22 10:02:47 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/api.py changed, reloading.
+27-Sep-22 10:02:56 - Watching for file changes with StatReloader
+27-Sep-22 10:03:34 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/apps.py changed, reloading.
+27-Sep-22 10:03:35 - Watching for file changes with StatReloader
+27-Sep-22 10:03:43 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/apps.py changed, reloading.
+27-Sep-22 10:03:44 - Watching for file changes with StatReloader
+27-Sep-22 10:05:35 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/crm_connector/views.py changed, reloading.
+27-Sep-22 10:05:35 - Watching for file changes with StatReloader
+27-Sep-22 10:05:57 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/crm_connector/views.py changed, reloading.
+27-Sep-22 10:05:57 - Watching for file changes with StatReloader
+27-Sep-22 10:07:50 - No /Root object! - Is this really a PDF?
+27-Sep-22 10:08:46 - 'tip_dokumenta'
+27-Sep-22 10:09:19 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/apps.py changed, reloading.
+27-Sep-22 10:09:19 - Watching for file changes with StatReloader
+27-Sep-22 10:09:25 - 'tip_dokumenta'
+27-Sep-22 10:09:39 - Checking if account already exists...
+27-Sep-22 10:09:41 - Adding new tender...
+27-Sep-22 10:09:51 - New tender has been successfully added!
+27-Sep-22 10:09:52 - list index out of range
+27-Sep-22 10:11:13 - Tender vec postoji! 771-1-1-18-3-19/22
+27-Sep-22 10:15:25 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/apps.py changed, reloading.
+27-Sep-22 10:15:25 - Watching for file changes with StatReloader
+27-Sep-22 10:15:34 - /var/www/html/crm_new/data/upload/62a1cdd55823ec2a4 (copy) je kreiran!
+27-Sep-22 10:15:34 - 'tip_dokumenta'
+27-Sep-22 10:16:39 - /var/www/html/crm_new/data/upload/62a9e1176585df309 (copy) je kreiran!
+27-Sep-22 10:16:39 - 'tip_dokumenta'
+27-Sep-22 10:17:27 - /var/www/html/crm_new/data/upload/62ada68e920226bb9 (copy) je kreiran!
+27-Sep-22 10:17:27 - 'tip_dokumenta'
+27-Sep-22 10:17:50 - /var/www/html/crm_new/data/upload/62b06a592a3c037c3 (copy) je kreiran!
+27-Sep-22 10:17:50 - 'tip_dokumenta'
+27-Sep-22 10:18:08 - /var/www/html/crm_new/data/upload/62b9ab2d1b00517d5 (copy) je kreiran!
+27-Sep-22 10:18:08 - 'tip_dokumenta'
+27-Sep-22 10:18:13 - /var/www/html/crm_new/data/upload/62b066e518c8d1b53 (copy) je kreiran!
+27-Sep-22 10:18:15 - 'tip_dokumenta'
+27-Sep-22 10:18:22 - /var/www/html/crm_new/data/upload/62b472df9ff2bac4b (copy) je kreiran!
+27-Sep-22 10:18:22 - 'tip_dokumenta'
+27-Sep-22 10:18:39 - /var/www/html/crm_new/data/upload/3a3f66ea-cea9-4eaa-997a-e0d79d08ce41.pdf je kreiran!
+27-Sep-22 10:18:40 - Tender vec postoji! 737-7-1-64-3-7/22
+27-Sep-22 11:21:26 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/crm_connector/settings.py changed, reloading.
+27-Sep-22 11:21:27 - Watching for file changes with StatReloader
+27-Sep-22 11:21:54 - /var/www/html/crm_new/data/upload/62c6bb16c0c79ba85 (copy) je kreiran!
+27-Sep-22 11:21:55 - 'tip_dokumenta'
+27-Sep-22 11:22:01 - /var/www/html/crm_new/data/upload/62c8371e3e9c88b0b (copy) je kreiran!
+27-Sep-22 11:22:02 - Tender vec postoji! 5-7-1-108-3-36/22
+27-Sep-22 11:23:06 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/apps.py changed, reloading.
+27-Sep-22 11:23:06 - Watching for file changes with StatReloader
+27-Sep-22 11:23:12 - Watching for file changes with StatReloader
+27-Sep-22 11:23:23 - /var/www/html/crm_new/data/upload/62da9c60da33b79f9 (copy) je kreiran!
+27-Sep-22 11:23:23 - /var/www/html/crm_new/data/upload/62da9c60da33b79f9 (copy) je kreiran!
+27-Sep-22 11:23:24 - Tender vec postoji! 186-7-1-646-3-56/22
+27-Sep-22 11:23:24 - Tender vec postoji! 186-7-1-646-3-56/22
+27-Sep-22 11:25:02 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/apps.py changed, reloading.
+27-Sep-22 11:25:02 - Watching for file changes with StatReloader
+27-Sep-22 11:25:06 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/apps.py changed, reloading.
+27-Sep-22 11:25:06 - Watching for file changes with StatReloader
+27-Sep-22 11:26:06 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/apps.py changed, reloading.
+27-Sep-22 11:26:07 - Watching for file changes with StatReloader
+27-Sep-22 11:26:17 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/apps.py changed, reloading.
+27-Sep-22 11:26:17 - Watching for file changes with StatReloader
+27-Sep-22 11:26:27 - /var/www/html/crm_new/data/upload/62da9eb5cc0758e9e (copy) je kreiran!
+27-Sep-22 11:26:27 - /var/www/html/crm_new/data/upload/62da9eb5cc0758e9e (copy) je kreiran!
+27-Sep-22 11:26:27 - Tender vec postoji! 862-1-1-105-3-153/22
+27-Sep-22 11:26:28 - Tender vec postoji! 862-1-1-105-3-153/22
