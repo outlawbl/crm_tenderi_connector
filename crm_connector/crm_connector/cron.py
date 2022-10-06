@@ -1,4 +1,5 @@
 from django_cron import CronJobBase, Schedule
+from file_sync.apps import FileSyncConfig
 import requests
 
 class MyCronJob(CronJobBase):

@@ -1,91 +1,294 @@
-23-Sep-22 07:30:41 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/manage.py changed, reloading.
-23-Sep-22 07:30:44 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/manage.py changed, reloading.
-26-Sep-22 13:51:35 - Not Found: /favicon.ico
-27-Sep-22 09:30:15 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/crm_connector/settings.py changed, reloading.
-27-Sep-22 09:32:05 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/crm_connector/settings.py changed, reloading.
-27-Sep-22 09:32:33 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/crm_connector/settings.py changed, reloading.
-27-Sep-22 09:33:18 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/__init__.py changed, reloading.
-27-Sep-22 09:33:26 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/__init__.py changed, reloading.
-27-Sep-22 09:35:32 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/apps.py changed, reloading.
-27-Sep-22 09:39:19 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/apps.py changed, reloading.
-27-Sep-22 09:40:22 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/apps.py changed, reloading.
-27-Sep-22 09:40:23 - Watching for file changes with StatReloader
-27-Sep-22 09:41:09 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/apps.py changed, reloading.
-27-Sep-22 09:41:20 - Watching for file changes with StatReloader
-INFO:django.utils.autoreload:Watching for file changes with StatReloader
-INFO:django.utils.autoreload:/home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/apps.py changed, reloading.
-INFO:django.utils.autoreload:Watching for file changes with StatReloader
-INFO:django.utils.autoreload:Watching for file changes with StatReloader
-INFO:django.utils.autoreload:/home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/apps.py changed, reloading.
-INFO:django.utils.autoreload:Watching for file changes with StatReloader
-INFO:django.utils.autoreload:/home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/apps.py changed, reloading.
-INFO:django.utils.autoreload:Watching for file changes with StatReloader
-INFO:django.utils.autoreload:/home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/apps.py changed, reloading.
-INFO:django.utils.autoreload:Watching for file changes with StatReloader
-INFO:django.utils.autoreload:/home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/apps.py changed, reloading.
-INFO:django.utils.autoreload:Watching for file changes with StatReloader
-INFO:django.utils.autoreload:/home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/apps.py changed, reloading.
-27-Sep-22 10:00:59 - Watching for file changes with StatReloader
-27-Sep-22 10:02:47 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/api.py changed, reloading.
-27-Sep-22 10:02:56 - Watching for file changes with StatReloader
-27-Sep-22 10:03:34 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/apps.py changed, reloading.
-27-Sep-22 10:03:35 - Watching for file changes with StatReloader
-27-Sep-22 10:03:43 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/apps.py changed, reloading.
-27-Sep-22 10:03:44 - Watching for file changes with StatReloader
-27-Sep-22 10:05:35 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/crm_connector/views.py changed, reloading.
-27-Sep-22 10:05:35 - Watching for file changes with StatReloader
-27-Sep-22 10:05:57 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/crm_connector/views.py changed, reloading.
-27-Sep-22 10:05:57 - Watching for file changes with StatReloader
-27-Sep-22 10:07:50 - No /Root object! - Is this really a PDF?
-27-Sep-22 10:08:46 - 'tip_dokumenta'
-27-Sep-22 10:09:19 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/apps.py changed, reloading.
-27-Sep-22 10:09:19 - Watching for file changes with StatReloader
-27-Sep-22 10:09:25 - 'tip_dokumenta'
-27-Sep-22 10:09:39 - Checking if account already exists...
-27-Sep-22 10:09:41 - Adding new tender...
-27-Sep-22 10:09:51 - New tender has been successfully added!
-27-Sep-22 10:09:52 - list index out of range
-27-Sep-22 10:11:13 - Tender vec postoji! 771-1-1-18-3-19/22
-27-Sep-22 10:15:25 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/apps.py changed, reloading.
-27-Sep-22 10:15:25 - Watching for file changes with StatReloader
-27-Sep-22 10:15:34 - /var/www/html/crm_new/data/upload/62a1cdd55823ec2a4 (copy) je kreiran!
-27-Sep-22 10:15:34 - 'tip_dokumenta'
-27-Sep-22 10:16:39 - /var/www/html/crm_new/data/upload/62a9e1176585df309 (copy) je kreiran!
-27-Sep-22 10:16:39 - 'tip_dokumenta'
-27-Sep-22 10:17:27 - /var/www/html/crm_new/data/upload/62ada68e920226bb9 (copy) je kreiran!
-27-Sep-22 10:17:27 - 'tip_dokumenta'
-27-Sep-22 10:17:50 - /var/www/html/crm_new/data/upload/62b06a592a3c037c3 (copy) je kreiran!
-27-Sep-22 10:17:50 - 'tip_dokumenta'
-27-Sep-22 10:18:08 - /var/www/html/crm_new/data/upload/62b9ab2d1b00517d5 (copy) je kreiran!
-27-Sep-22 10:18:08 - 'tip_dokumenta'
-27-Sep-22 10:18:13 - /var/www/html/crm_new/data/upload/62b066e518c8d1b53 (copy) je kreiran!
-27-Sep-22 10:18:15 - 'tip_dokumenta'
-27-Sep-22 10:18:22 - /var/www/html/crm_new/data/upload/62b472df9ff2bac4b (copy) je kreiran!
-27-Sep-22 10:18:22 - 'tip_dokumenta'
-27-Sep-22 10:18:39 - /var/www/html/crm_new/data/upload/3a3f66ea-cea9-4eaa-997a-e0d79d08ce41.pdf je kreiran!
-27-Sep-22 10:18:40 - Tender vec postoji! 737-7-1-64-3-7/22
-27-Sep-22 11:21:26 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/crm_connector/settings.py changed, reloading.
-27-Sep-22 11:21:27 - Watching for file changes with StatReloader
-27-Sep-22 11:21:54 - /var/www/html/crm_new/data/upload/62c6bb16c0c79ba85 (copy) je kreiran!
-27-Sep-22 11:21:55 - 'tip_dokumenta'
-27-Sep-22 11:22:01 - /var/www/html/crm_new/data/upload/62c8371e3e9c88b0b (copy) je kreiran!
-27-Sep-22 11:22:02 - Tender vec postoji! 5-7-1-108-3-36/22
-27-Sep-22 11:23:06 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/apps.py changed, reloading.
-27-Sep-22 11:23:06 - Watching for file changes with StatReloader
-27-Sep-22 11:23:12 - Watching for file changes with StatReloader
-27-Sep-22 11:23:23 - /var/www/html/crm_new/data/upload/62da9c60da33b79f9 (copy) je kreiran!
-27-Sep-22 11:23:23 - /var/www/html/crm_new/data/upload/62da9c60da33b79f9 (copy) je kreiran!
-27-Sep-22 11:23:24 - Tender vec postoji! 186-7-1-646-3-56/22
-27-Sep-22 11:23:24 - Tender vec postoji! 186-7-1-646-3-56/22
-27-Sep-22 11:25:02 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/apps.py changed, reloading.
-27-Sep-22 11:25:02 - Watching for file changes with StatReloader
-27-Sep-22 11:25:06 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/apps.py changed, reloading.
-27-Sep-22 11:25:06 - Watching for file changes with StatReloader
-27-Sep-22 11:26:06 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/apps.py changed, reloading.
-27-Sep-22 11:26:07 - Watching for file changes with StatReloader
-27-Sep-22 11:26:17 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/apps.py changed, reloading.
-27-Sep-22 11:26:17 - Watching for file changes with StatReloader
-27-Sep-22 11:26:27 - /var/www/html/crm_new/data/upload/62da9eb5cc0758e9e (copy) je kreiran!
-27-Sep-22 11:26:27 - /var/www/html/crm_new/data/upload/62da9eb5cc0758e9e (copy) je kreiran!
-27-Sep-22 11:26:27 - Tender vec postoji! 862-1-1-105-3-153/22
-27-Sep-22 11:26:28 - Tender vec postoji! 862-1-1-105-3-153/22
+03-Oct-22 14:33:46 - Watching for file changes with StatReloader
+03-Oct-22 14:34:04 - /var/www/html/crm_new/data/upload/62e141b3a589c16d9 (3rd copy) je kreiran!
+03-Oct-22 14:34:29 - /var/www/html/crm_new/data/upload/62e141b3a589c16d9 (3rd copy) je kreiran!
+03-Oct-22 14:34:34 - Tender vec postoji! 195-7-1-52-3-16/22
+03-Oct-22 14:34:41 - Tender vec postoji! 195-7-1-52-3-16/22
+03-Oct-22 14:35:42 - /var/www/html/crm_new/data/upload/62e141b3a589c16d9 (4th copy) je kreiran!
+03-Oct-22 14:35:43 - /var/www/html/crm_new/data/upload/62e141b3a589c16d9 (4th copy) je kreiran!
+03-Oct-22 14:35:43 - Tender vec postoji! 195-7-1-52-3-16/22
+03-Oct-22 14:35:44 - Tender vec postoji! 195-7-1-52-3-16/22
+03-Oct-22 14:40:36 - /var/www/html/crm_new/data/upload/62e141b3a589c16d9 (5th copy) je kreiran!
+03-Oct-22 14:40:37 - Tender vec postoji! 195-7-1-52-3-16/22
+03-Oct-22 14:42:52 - Watching for file changes with StatReloader
+03-Oct-22 14:42:59 - /var/www/html/crm_new/data/upload/62e141b3a589c16d9 (6th copy) je kreiran!
+03-Oct-22 14:43:00 - Tender vec postoji! 195-7-1-52-3-16/22
+03-Oct-22 14:45:36 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/apps.py changed, reloading.
+03-Oct-22 14:45:38 - Watching for file changes with StatReloader
+03-Oct-22 15:01:53 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/models.py changed, reloading.
+03-Oct-22 15:01:56 - Watching for file changes with StatReloader
+03-Oct-22 15:03:48 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/models.py changed, reloading.
+03-Oct-22 15:03:51 - Watching for file changes with StatReloader
+03-Oct-22 15:04:00 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/watcher/models.py changed, reloading.
+03-Oct-22 15:04:02 - Watching for file changes with StatReloader
+03-Oct-22 15:09:14 - Watching for file changes with StatReloader
+03-Oct-22 15:11:00 - /var/www/html/crm_new/data/upload/62e141b3a589c16d9 (7th copy) je kreiran!
+03-Oct-22 15:11:02 - Tender vec postoji! 195-7-1-52-3-16/22
+03-Oct-22 15:11:54 - Watching for file changes with StatReloader
+03-Oct-22 15:12:55 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/crm_connector/settings.py changed, reloading.
+03-Oct-22 15:13:27 - Watching for file changes with StatReloader
+04-Oct-22 12:25:21 - Watching for file changes with StatReloader
+04-Oct-22 12:25:25 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/crm_connector/settings.py changed, reloading.
+04-Oct-22 12:25:27 - Watching for file changes with StatReloader
+04-Oct-22 12:38:42 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/file_sync/models.py changed, reloading.
+04-Oct-22 12:38:44 - Watching for file changes with StatReloader
+04-Oct-22 12:40:01 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/file_sync/models.py changed, reloading.
+04-Oct-22 12:40:03 - Watching for file changes with StatReloader
+04-Oct-22 12:40:25 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/file_sync/models.py changed, reloading.
+04-Oct-22 12:40:27 - Watching for file changes with StatReloader
+04-Oct-22 12:44:06 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/file_sync/admin.py changed, reloading.
+04-Oct-22 12:44:08 - Watching for file changes with StatReloader
+04-Oct-22 12:44:16 - Internal Server Error: /admin/file_sync/sync/
+Traceback (most recent call last):
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: file_sync_sync
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1931, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 834, in get_changelist_instance
+    return ChangeList(
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/contrib/admin/views/main.py", line 123, in __init__
+    self.get_results(request)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/contrib/admin/views/main.py", line 279, in get_results
+    result_count = paginator.count
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/core/paginator.py", line 96, in count
+    return c()
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/models/query.py", line 621, in count
+    return self.query.get_count(using=self.db)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 559, in get_count
+    return obj.get_aggregation(using, ["__count"])["__count"]
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 544, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1395, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: file_sync_sync
+04-Oct-22 12:46:37 - Watching for file changes with StatReloader
+04-Oct-22 12:46:47 - Internal Server Error: /admin/file_sync/sync/
+Traceback (most recent call last):
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: file_sync_sync
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1931, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 834, in get_changelist_instance
+    return ChangeList(
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/contrib/admin/views/main.py", line 123, in __init__
+    self.get_results(request)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/contrib/admin/views/main.py", line 279, in get_results
+    result_count = paginator.count
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/core/paginator.py", line 96, in count
+    return c()
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/models/query.py", line 621, in count
+    return self.query.get_count(using=self.db)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 559, in get_count
+    return obj.get_aggregation(using, ["__count"])["__count"]
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 544, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1395, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: file_sync_sync
+04-Oct-22 12:47:10 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/file_sync/models.py changed, reloading.
+04-Oct-22 12:47:12 - Watching for file changes with StatReloader
+04-Oct-22 12:48:59 - /home/sandro/Dev/crm_tenderi_connector/crm_connector/file_sync/models.py changed, reloading.
+04-Oct-22 12:49:01 - Watching for file changes with StatReloader
+04-Oct-22 12:49:10 - Internal Server Error: /admin/file_sync/sync/
+Traceback (most recent call last):
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: file_sync_sync
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1931, in changelist_view
+    cl = self.get_changelist_instance(request)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 834, in get_changelist_instance
+    return ChangeList(
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/contrib/admin/views/main.py", line 123, in __init__
+    self.get_results(request)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/contrib/admin/views/main.py", line 279, in get_results
+    result_count = paginator.count
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/utils/functional.py", line 57, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/core/paginator.py", line 96, in count
+    return c()
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/models/query.py", line 621, in count
+    return self.query.get_count(using=self.db)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 559, in get_count
+    return obj.get_aggregation(using, ["__count"])["__count"]
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/models/sql/query.py", line 544, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1395, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: file_sync_sync
+04-Oct-22 12:49:28 - Internal Server Error: /admin/file_sync/sync/add/
+Traceback (most recent call last):
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such table: file_sync_sync
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/core/handlers/exception.py", line 55, in inner
+    response = get_response(request)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/core/handlers/base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 686, in wrapper
+    return self.admin_site.admin_view(view)(*args, **kwargs)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/views/decorators/cache.py", line 62, in _wrapped_view_func
+    response = view_func(request, *args, **kwargs)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/contrib/admin/sites.py", line 242, in inner
+    return view(request, *args, **kwargs)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1890, in add_view
+    return self.changeform_view(request, None, form_url, extra_context)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 46, in _wrapper
+    return bound_method(*args, **kwargs)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/utils/decorators.py", line 133, in _wrapped_view
+    response = view_func(request, *args, **kwargs)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1750, in changeform_view
+    return self._changeform_view(request, object_id, form_url, extra_context)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1802, in _changeform_view
+    self.save_model(request, new_object, form, not add)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/contrib/admin/options.py", line 1225, in save_model
+    obj.save()
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/models/base.py", line 831, in save
+    self.save_base(
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/models/base.py", line 882, in save_base
+    updated = self._save_table(
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/models/base.py", line 1025, in _save_table
+    results = self._do_insert(
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/models/base.py", line 1066, in _do_insert
+    return manager._insert(
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/models/manager.py", line 85, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/models/query.py", line 1790, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/models/sql/compiler.py", line 1657, in execute_sql
+    cursor.execute(sql, params)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 103, in execute
+    return super().execute(sql, params)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 67, in execute
+    return self._execute_with_wrappers(
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 80, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/utils.py", line 91, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/backends/utils.py", line 89, in _execute
+    return self.cursor.execute(sql, params)
+  File "/home/sandro/.local/lib/python3.8/site-packages/django/db/backends/sqlite3/base.py", line 357, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such table: file_sync_sync
